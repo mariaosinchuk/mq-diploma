@@ -29,9 +29,7 @@
 
   <main class="content">
     <section class="current-trends">
-      <a class="link" href=#0>
-        <h2 class="section-title current-title">Сейчас в тренде</h2>
-      </a>
+      <h2 class="section-title current-title">Сейчас в тренде</h2>
       <div class="trends">
         <div class="trend trend-garden">
           <div class="post-info trend-post-info">
@@ -80,7 +78,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <div class="central-part">
       <section class="posts-list">
@@ -288,9 +286,13 @@
       </a>
       <div class="products">
         <div class="product">
-          <div class="product-decoration"></div>
-          <img src="images/shop-item-desk1.jpg" alt="Розовая подушка с надписью и изображением стрелки вниз."
+          <picture>
+            <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
+            <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px)">
+            <source srcset="images/shop-item-mobile1.jpg">
+            <img srcset="images/shop-item-desk1.jpg" alt="Розовая подушка с надписью и изображением стрелки вниз."
             class="product-image">
+          </picture>
           <div class="product-details">
             <h3 class="product-name">подушки на диван</h3>
             <p class="product-description">Набор из двух подушек с модными принтами. Видео о создании <a href="#0"
@@ -300,17 +302,19 @@
                 <p class="old-price">1000 &#8381;</p>
                 <p class="new-price">800 &#8381;</p>
               </div>
-              <form>
-                <button class="product-purchase-button">в магазин</button>
-              </form>
+              <a href="#0" class="product-purchase-button">в магазин</a>
             </div>
           </div>
         </div>
 
         <div class="product">
-          <div class="product-decoration"></div>
-          <img src="images/shop-item-desk2.jpg" alt="Игрушка-заяц в платье на столе рядом со шкатулкой и кружкой."
+          <picture>
+            <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
+            <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px)">
+            <source srcset="images/shop-item-mobile2.jpg">
+            <img srcset="images/shop-item-desk2.jpg" alt="Игрушка-заяц в платье на столе рядом со шкатулкой и кружкой."
             class="product-image">
+          </picture>
           <div class="product-details">
             <h3 class="product-name">Кукла &#171;Зайчик&#187;</h3>
             <p class="product-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a
@@ -320,17 +324,19 @@
                 <p class="old-price"></p>
                 <p class="new-price">3500 &#8381;</p>
               </div>
-              <form>
-                <button class="product-purchase-button">в магазин</button>
-              </form>
+              <a href="#0" class="product-purchase-button">в магазин</a>
             </div>
           </div>
         </div>
 
         <div class="product">
-          <div class="product-decoration"></div>
-          <img src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка и ваза с мелкими белыми цветами."
+          <picture>
+            <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
+            <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px)">
+            <source srcset="images/shop-item-mobile3.jpg">
+            <img srcset="images/shop-item-desk1.jpg" alt="Шестиугольная рамка и ваза с мелкими белыми цветами."
             class="product-image">
+          </picture>
           <div class="product-details">
             <h3 class="product-name">Шестиугольная рамка</h3>
             <p class="product-description">Необычная рамка для украшения дома из видео <a href="#0"
@@ -340,9 +346,7 @@
                 <p class="old-price">500 &#8381;</p>
                 <p class="new-price">400 &#8381;</p>
               </div>
-              <form>
-                <button class="product-purchase-button">в магазин</button>
-              </form>
+              <a href="#0" class="product-purchase-button">в магазин</a>
             </div>
           </div>
         </div>
