@@ -40,7 +40,7 @@
    }
 
    .header-line {
-     width: 70%;
+     max-width: 1200px;
      margin: 0 auto;
      display: flex;
      justify-content: space-between;
@@ -109,7 +109,7 @@
      width: 100%;
      margin: 0 auto;
      display: flex;
-     align-items: center;
+     align-items: stretch;
      margin-top: 25px;
      gap: 2px;
      position: relative;
@@ -118,8 +118,9 @@
    .trend {
      margin: 0 auto;
      display: flex;
+     padding: 0 20px 15px 20px;
      align-items: flex-end;
-     width: 24%;
+     width: 25%;
      height: 320px;
      background-size: cover;
      background-repeat: no-repeat;
@@ -159,6 +160,7 @@
      display: flex;
      gap: 120px;
      width: 96%;
+     max-width: 1200px;
    }
 
    .post {
@@ -173,7 +175,7 @@
    }
 
    .post-picture {
-     width: 380px;
+     max-width: 380px;
    }
 
    .categories {
@@ -210,6 +212,7 @@
      font-family: OpenSans;
      font-weight: bold;
      font-size: 20px;
+     line-height: 24px;
      color: #0f0d0e;
    }
 
@@ -230,15 +233,14 @@
 
    .trend-title {
      color: #fff;
+     font-size: 1.6vw;
    }
 
    .trend-post-info {
-     margin-bottom: 70px;
-     margin-left: 50px;
+     padding: 40px 30px;
      z-index: 1;
-     outline: 3px solid #b59f5b;
-     outline-offset: 35px;
-     max-width: 300px;
+     border: 3px solid #b59f5b;
+     width: 100%;
    }
 
    .publication-details {
@@ -272,6 +274,7 @@
      font-family: OpenSans;
      font-weight: regular;
      font-size: 15px;
+     line-height: 22px;
      color: #0f0d0e;
    }
 
@@ -281,6 +284,7 @@
    }
 
    .products {
+     margin: 0 auto;
      margin-top: 25px;
      padding-left: 25px;
      padding-right: 25px;
@@ -300,6 +304,8 @@
    .product-details {
      margin: 0;
      padding: 0;
+     outline: 3px solid #b59f5b;
+     outline-offset: 22px;
    }
 
    .product-name {
@@ -364,20 +370,16 @@
      width: 140px;
      padding: 0;
      border: none;
+     text-decoration: none;
      text-transform: uppercase;
      color: #fff;
      height: 48px;
      background-color: #b59f5b;
-   }
-
-   .product-decoration {
-     position: absolute;
-     bottom: -20px;
-     left: -23px;
-     box-sizing: content-box;
-     border: 3px solid #b59f5b;
-     width: 347px;
-     height: 267px;
+     font-size: 14px;
+     line-height: 40px;
+     font-weight: 700;
+     font-family: "Open Sans";
+     text-align: center;
    }
 
    .footer {
@@ -467,7 +469,7 @@
    }
 
    .new-post-picture {
-     width: 70px;
+     max-width: 70px;
    }
 
    .new-post-datetime {
@@ -567,10 +569,14 @@
      padding: 0;
      border: none;
      text-transform: uppercase;
-     color: #fff;
      min-height: 55px;
      width: 100%;
      background-color: #b59f5b;
+     font-size: 14px;
+     line-height: 40px;
+     color: #ffffff;
+     font-weight: 700;
+     font-family: "Open Sans";
    }
 
    .topics-list {
@@ -694,7 +700,7 @@
      outline: none;
    }
 
-   @media screen and (min-width: 768px) and (max-width: 1199px) {
+   @media screen and (min-width: 641px) and (max-width: 1199px) {
      .header {
        background-image: url(../images/banner-bg-tablet.jpg);
      }
@@ -728,20 +734,33 @@
        max-width: 550px;
      }
 
+     posts-list {
+       width: 100%;
+     }
+
      .post {
        flex-direction: column;
        max-width: 390px;
+       margin-bottom: 40px;
+       border-bottom: 3px solid #eeeeee;
+       padding-bottom: 22px;
+       gap: 0;
      }
 
      .central-part {
-       width: 91%;
-       padding-left: 35px;
-       padding-right: 35px;
-       gap: 35px;
+       padding-left: 5%;
+       padding-right: 5%;
+       gap: 5%;
      }
 
-     .additional {
-       max-width: 275px;
+     .section-title {
+      font-size: 17px;
+      line-height: 22px;
+      margin-top: 0;
+     }
+
+     .common-text {
+       margin-top: 40px;
      }
 
      .products {
@@ -750,6 +769,22 @@
 
      .footer {
        width: 90%;
+       margin-top: 50px;
+     }
+   }
+
+
+   @media screen and (min-width: 641px) and (max-width: 1100x) {
+     .products {
+       gap: 0;
+     }
+
+     .product {
+       margin: 0;
+     }
+
+     .product:nth-child(2n+1) {
+       margin-right: 70px;
      }
    }
 
