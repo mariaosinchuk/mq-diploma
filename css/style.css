@@ -116,6 +116,7 @@
    }
 
    .trend {
+     aspect-ratio: 1/2;
      margin: 0 auto;
      display: flex;
      padding: 0 20px 15px 20px;
@@ -233,7 +234,7 @@
 
    .trend-title {
      color: #fff;
-     font-size: 1.6vw;
+     font-size: 20px;
    }
 
    .trend-post-info {
