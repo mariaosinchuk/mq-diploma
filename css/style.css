@@ -71,6 +71,46 @@
      border-bottom: 1px solid white;
    }
 
+   .burger-menu {
+     display: none;
+     z-index: 1;
+     width: 1.3em;
+     height: 1em;
+     border: none;
+     padding: 0;
+     background-color: transparent;
+     font-size: 25px;
+     position: relative;
+     text-indent: -9999px;
+   }
+
+   .burger-menu:before {
+     top: 0;
+   }
+
+   .burger-menu:after {
+    bottom: 0;
+  }
+
+   .burger-menu:before, .burger-menu:after {
+      content: "";
+      width: 100%;
+      height: 20%;
+      background-color: #ffffff;
+      position: absolute;
+      left: 0;
+   }
+
+   .burger-menu-label {
+      width: 100%;
+      height: 20%;
+      margin-top: -0.1em;
+      background-color: #ffffff;
+      position: absolute;
+      left: 0;
+      top: 50%;
+}
+
    .header-title {
      position: relative;
      margin: 0 auto;
@@ -293,23 +333,28 @@
    }
 
    .product {
+     display: flex;
+     flex-direction: column;
      margin: 0;
      padding: 0;
      position: relative;
-     width: 300px;
+     width: 30%;
+     max-width: 300px;
    }
 
-   .product-image {}
+   .product-image {
+     max-width: 300px;
+   }
 
    .product-details {
-     margin: 0;
-     padding: 0;
+     margin: -30px -20px 0 -20px;
+     padding: 37px 20px 30px 20px;
      outline: 3px solid #b59f5b;
-     outline-offset: 22px;
+     flex-grow: 1;
    }
 
    .product-name {
-     margin: 25px 0 0 0;
+     margin: 0;
      padding: 0;
      font-family: OpenSans;
      text-transform: uppercase;
@@ -346,7 +391,6 @@
    .old-price {
      margin: 0;
      padding: 0;
-     font-weight: bold;
      font-size: 14px;
      line-height: 24px;
      text-decoration: line-through;
@@ -358,7 +402,7 @@
    .new-price {
      margin: 0;
      padding: 0;
-     font-weight: bold;
+     font-size: 20px;
      line-height: 24px;
      color: #0f0d0e;
      font-weight: 700;
@@ -705,7 +749,13 @@
        background-image: url(../images/banner-bg-tablet.jpg);
      }
 
-     .header-menu {}
+     .header-menu {
+      display: none;
+     }
+
+     .burger-menu {
+      display: initial;
+     }
 
      .header-line {
        width: 91%;
@@ -740,7 +790,6 @@
 
      .post {
        flex-direction: column;
-       max-width: 390px;
        margin-bottom: 40px;
        border-bottom: 3px solid #eeeeee;
        padding-bottom: 22px;
@@ -767,6 +816,10 @@
        flex-wrap: wrap;
      }
 
+     .product {
+      width: 40%;
+     }
+
      .footer {
        width: 90%;
        margin-top: 50px;
@@ -776,8 +829,9 @@
 
    @media screen and (min-width: 641px) and (max-width: 768px) {
      .product {
-       width: calc((100% /2) - 87px);
+       width: calc((100% / 2) - 87px);
      }
+
    }
    
    @media screen and (min-width: 641px) and (max-width: 732px) {
