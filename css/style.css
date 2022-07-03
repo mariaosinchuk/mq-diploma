@@ -4,6 +4,18 @@
      padding: 0;
    }
 
+   .body:after {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 60%;
+}
+
    * {
      box-sizing: border-box;
    }
@@ -772,6 +784,11 @@
     .products {
       flex-wrap: wrap;
     }
+
+    .close-feedback-form {
+      width: 25px;
+      top: -30px;
+    }
     
     .footer {
       width: 91%;
@@ -984,11 +1001,23 @@
       line-height: 29px;
     }
 
+    .feedback-form {
+      width: 330px;
+      left: calc((100% - 330px) / 2);
+    }
+
    }
 
    @media screen and (min-width: 320px) and (max-width: 388px) {
     .post-picture {
       max-width: 100%;
+    }
+   }
+
+   @media screen and (min-width: 320px) and (max-width: 440px) {
+    .feedback-form {
+     width: 310px;
+     left: calc((100% - 310px) / 2);
     }
    }
 
